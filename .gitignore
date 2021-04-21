@@ -1,0 +1,9 @@
+# npm
+package-lock.json
+node_modules
+yarn.lock
+.DS_Store
+# history
+.history
+.temp/*
+
