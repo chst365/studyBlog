@@ -13,10 +13,10 @@ echo 'https://blog.smart-lzgz.cn' > CNAME  # 自定义域名
 
 if [ -z "$ACCESS_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:chst365/studyNote.git
+  githubUrl=git@github.com:chst365/studyBlog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://chst365:${ACCESS_TOKEN}@github.com/chst365/studyNote.git
+  githubUrl=https://chst365:${ACCESS_TOKEN}@github.com/chst365/studyBlog.git
   git config --global user.name "chstz365"
   git config --global user.email "chstz_365@163.com"
 fi

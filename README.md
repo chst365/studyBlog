@@ -1,1 +1,1 @@
-# studyNote
+# studyBlog
