@@ -8,7 +8,7 @@ module.exports = [
             // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
             { text: '浏览器', link: '/pages/270f88/' },
             { text: 'webpack', link: '/pages/a1323f/' },
-            { text: 'TypeScript', link: '/pages/b3d0bc/' }
+            { text: 'TypeScript', link: '/pages/b3d0bc/' },
             { text: '性能', link: '/pages/ba2200/' }
         ],
     },
