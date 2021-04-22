@@ -9,6 +9,7 @@ module.exports = [
             { text: '浏览器', link: '/pages/270f88/' },
             { text: 'webpack', link: '/pages/a1323f/' },
             { text: 'TypeScript', link: '/pages/b3d0bc/' }
+            { text: '性能', link: '/pages/ba2200/' }
         ],
     },
     {
