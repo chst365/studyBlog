@@ -3,8 +3,8 @@
 # 需要批量处理的路径，docs文件夹内的文件夹  (数组，映射路径：path[0]/path[1]/path[2] ... )
 path:
   - docs # 第一个成员必须是docs
-  - 01.前端
-  - 05.工程化
+  - 02.开发必备
+  - 01.Git
 # 要删除的字段 (数组)
 # delete:
 
@@ -14,10 +14,8 @@ path:
 add:
 data:
   tags:
-    - 工程化
-    - webpack
-    - babel
-    - 微服务
+    - 开发必备
+    - Git
   author:
     name: chst365
     link: https://github.com/chst365
