@@ -21,6 +21,12 @@ module.exports = [
         ],
     },
     {
+        text: '杂记',
+        link: '/notes/',
+        items: [
+        ]
+    },
+    {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
         items: [
