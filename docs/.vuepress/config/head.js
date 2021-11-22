@@ -17,6 +17,16 @@ module.exports = [
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    [
+        'script',
+        {
+            'data-website-id': 'd37fd1ba-3ce4-4443-b8d7-88c163c8f9c2',
+            defer: 'defer',
+            async: 'async',
+            src: 'https://umami.smart-lzgz.cn/umami.js',
+        },
+    ],
+    // <script async defer data-website-id="d37fd1ba-3ce4-4443-b8d7-88c163c8f9c2" src="https://umami.smart-lzgz.cn/umami.js"></script>
     // [
     //     'script',
     //     {
