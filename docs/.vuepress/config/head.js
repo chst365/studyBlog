@@ -21,7 +21,6 @@ module.exports = [
         'script',
         {
             'data-website-id': 'd37fd1ba-3ce4-4443-b8d7-88c163c8f9c2',
-            defer: 'defer',
             async: 'async',
             src: 'https://umami.smart-lzgz.cn/umami.js',
         },
