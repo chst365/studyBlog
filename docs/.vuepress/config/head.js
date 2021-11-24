@@ -25,7 +25,12 @@ module.exports = [
             src: 'https://umami.smart-lzgz.cn/umami.js',
         },
     ],
-    // <script async defer data-website-id="d37fd1ba-3ce4-4443-b8d7-88c163c8f9c2" src="https://umami.smart-lzgz.cn/umami.js"></script>
+    [
+        'script',
+        {
+            src: './js/matomo.js',
+        }
+    ]
     // [
     //     'script',
     //     {
