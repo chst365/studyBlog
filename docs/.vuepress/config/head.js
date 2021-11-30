@@ -28,7 +28,7 @@ module.exports = [
     [
         'script',
         {
-            src: './js/matomo.js',
+            src: '/js/matomo.js',
         }
     ]
     // [
