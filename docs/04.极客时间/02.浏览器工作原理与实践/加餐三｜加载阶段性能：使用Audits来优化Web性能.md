@@ -2,12 +2,16 @@
 title: 加餐三｜加载阶段性能：使用Audits来优化Web性能
 date: 2022-03-08 21:56:18
 permalink: /pages/ec1c82/
-categories:
+categories: 
   - 极客时间
   - 浏览器工作原理与实践
-tags:
-  - 
+tags: 
+  - 极客时间
+author: 
+  name: chst365
+  link: https://github.com/chst365
 ---
+![](https://cdn.jsdelivr.net/gh/chst365/bolgImgs/imgs/topImgs/340.jpg)
 <audio title="加餐三｜加载阶段性能：使用Audits来优化Web性能" src="https://static001.geekbang.org/resource/audio/da/0e/da3e6177586fd36efbff15e8c935260e.mp3" controls="controls"></audio> 
 <p>你好，我是李兵。</p><p>作为一名前端工程师，除了需要编写功能性的代码以外，我们还需要关注Web应用的性能问题，我们应该有能力让我们的Web应用占用最小的资源，并以最高性能运行，这也是前端工程师进阶的必要能力。既然性能这么重要，那么我们今天要来聊聊Web性能问题。</p><h2>到底什么是Web性能?</h2><p>我们看下wiki对Web 性能的<a href="https://en.wikipedia.org/wiki/Web_performance">定义</a>：</p><blockquote>
 <p>Web 性能描述了Web应用在浏览器上的加载和显示的速度。</p>

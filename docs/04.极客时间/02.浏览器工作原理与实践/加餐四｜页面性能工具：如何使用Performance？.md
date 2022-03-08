@@ -2,12 +2,16 @@
 title: 加餐四｜页面性能工具：如何使用Performance？
 date: 2022-03-08 21:56:24
 permalink: /pages/4fed51/
-categories:
+categories: 
   - 极客时间
   - 浏览器工作原理与实践
-tags:
-  - 
+tags: 
+  - 极客时间
+author: 
+  name: chst365
+  link: https://github.com/chst365
 ---
+![](https://cdn.jsdelivr.net/gh/chst365/bolgImgs/imgs/topImgs/404.jpg)
 <audio title="加餐四｜页面性能工具：如何使用Performance？" src="https://static001.geekbang.org/resource/audio/80/df/80439d418173ccc067e6a7e567928fdf.mp3" controls="controls"></audio> 
 <p>你好，我是李兵。</p><p>在分析页面性能时，如果说Audits是道开胃菜，那么Performance才是正餐，之所这样说，主要是因为Performance可以记录站点在运行过程中的性能数据，有了这些性能数据，我们就可以回放整个页面的执行过程，这样就方便我们来定位和诊断每个时间段内页面的运行情况，从而有效帮助我们找出页面的性能瓶颈。</p><p>不同于Audits，Perofrmance不会给出性能得分，也不会给出优化建议，它只是单纯地采集性能数据，并将采集到的数据按照时间线的方式来展现，我们要做的就是依据原始数据来分析Web应用的性能问题。</p><p>那么本节，我们就继续深入，聊聊如何使用Performance。通常，使用Performance需要分三步走：</p><ol>
 <li>第一步是配置Performance；</li>

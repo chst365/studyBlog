@@ -2,12 +2,16 @@
 title: 加餐六｜HTTPS：浏览器如何验证数字证书？
 date: 2022-03-08 21:56:35
 permalink: /pages/5f33e1/
-categories:
+categories: 
   - 极客时间
   - 浏览器工作原理与实践
-tags:
-  - 
+tags: 
+  - 极客时间
+author: 
+  name: chst365
+  link: https://github.com/chst365
 ---
+![](https://cdn.jsdelivr.net/gh/chst365/bolgImgs/imgs/topImgs/352.jpg)
 <audio title="加餐六｜HTTPS：浏览器如何验证数字证书？" src="https://static001.geekbang.org/resource/audio/50/64/50aa22ae9f97ffa429e36f8993fef064.mp3" controls="controls"></audio> 
 <p>你好，我是李兵。</p><p>在《<a href="https://time.geekbang.org/column/article/156181">36｜HTTPS：让数据传输更安全</a>》这篇文章中，我们聊了下面几个问题：</p><ul>
 <li>HTTPS使用了对称和非对称的混合加密方式，这解决了数据传输安全的问题；</li>

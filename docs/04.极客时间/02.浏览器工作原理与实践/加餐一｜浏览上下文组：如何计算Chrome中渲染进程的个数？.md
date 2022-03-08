@@ -2,12 +2,16 @@
 title: 加餐一｜浏览上下文组：如何计算Chrome中渲染进程的个数？
 date: 2022-03-08 21:56:07
 permalink: /pages/23612c/
-categories:
+categories: 
   - 极客时间
   - 浏览器工作原理与实践
-tags:
-  - 
+tags: 
+  - 极客时间
+author: 
+  name: chst365
+  link: https://github.com/chst365
 ---
+![](https://cdn.jsdelivr.net/gh/chst365/bolgImgs/imgs/topImgs/140.jpg)
 <audio title="加餐一｜浏览上下文组：如何计算Chrome中渲染进程的个数？" src="https://static001.geekbang.org/resource/audio/cd/59/cda88e0850cd772520441adf9264e159.mp3" controls="controls"></audio> 
 <p>你好，我是李兵。</p><p>在留言区，经常有朋友问到如何计算Chrome中渲染进程个数的问题，那么今天我就来完整地解答这个问题。</p><p>在前面“<a href="https://time.geekbang.org/column/article/117637">04 | 导航流程</a>”这一讲中我们介绍过了，在默认情况下，如果打开一个标签页，那么浏览器会默认为其创建一个渲染进程。不过我们在“<a href="https://time.geekbang.org/column/article/117637">04 | 导航流程</a>”中还介绍了同一站点的概念，如果从一个标签页中打开了另一个新标签页，当新标签页和当前标签页属于同一站点的话，那么新标签页会复用当前标签页的渲染进程。</p><p>具体地讲，如果我从极客邦(www.geekbang.org) 的标签页中打开新的极客时间(time.geekbang.org) 标签页，由于这两个标签页属于同一站点(相同协议、相同根域名)，所以他们会共用同一个渲染进程。你可以看下面这张Chrome的任务管理器截图：</p><p><img src="https://static001.geekbang.org/resource/image/f8/5c/f87168a79df0b87a08b243937f53545c.png" alt=""></p><center><span class="reference">多个标签页运行在同一个渲染进程</span></center><p>观察上图，我们可以看到，极客邦官网和极客时间标签页都共用同一个渲染进程，该进程ID是84748。</p><p>不过如果我们分别打开这两个标签页，比如先打开极客邦的标签页，然后再新建一个标签页，再在这个新标签页中打开极客时间，这时候我们可以看到这两个标签页分别使用了两个不同的渲染进程。你可以参看下图：</p><p><img src="https://static001.geekbang.org/resource/image/34/f9/34815ee3a8d5057d39ebb6f871fbf0f9.jpg" alt=""></p><center><span class="reference">多个标签页运行在不同的渲染进程中</span></center><!-- [[[read_end]]] --><p>那么到了这里，你一定会很好奇，既然都是同一站点，为什么从A标签页中打开B标签页，就会使用同一个渲染进程，而分别打开这两个标签页，又会分别使用不同的渲染进程？</p><h2>标签页之间的连接</h2><p>要搞清楚这个问题，我们要先来分析下浏览器标签页之间的连接关系。</p><p>我们知道，浏览器标签页之间是可以通过JavaScript脚本来连接的，通常情况下有如下几种连接方式：</p><p><strong>第一种是通过<code>&lt;a&gt;</code>标签来和新标签建立连接</strong>，这种方式我们最熟悉，比如下面这行代码是从极客邦标签页里面拷贝过来的：</p><pre><code>&lt;a  href=&quot;https://time.geekbang.org/&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;极客时间&lt;/a&gt;
 </code></pre><p>这是从极客邦官网中打开极客时间的链接，点击该链接会打开新的极客时间标签页，新标签页中的window.opener的值就是指向极客邦标签页中的window，这样就可以在新的极客时间标签页中通过opener来操作上个极客邦的标签页了。这样我们可以说，这两个标签页是有连接的。</p><p>另外，<strong>还可以通过JavaScript中的window.open方法来和新标签页建立连接</strong>，演示代码如下所示：</p><pre><code>new_window = window.open(&quot;http://time.geekbang.org&quot;)
