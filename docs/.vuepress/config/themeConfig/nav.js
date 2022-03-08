@@ -29,6 +29,18 @@ module.exports = [
         ]
     },
     {
+        text: '极客时间',
+        link: '/jksj/',
+        items: [
+            { text: '跟月影学可视化', link: '/pages/b01c92/' },
+            { text: '浏览器工作原理与实践', link: '/pages/90a2bb/' },
+            { text: '透视HTTP协议', link: '/pages/0ba898/' },
+            { text: '图解 Google V8', link: '/pages/fe343c/' },
+            { text: '玩转Vue 3全家桶', link: '/pages/721c57/' },
+            { text: '重学前端', link: '/pages/52e21a/' },
+        ]
+    },
+    {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
         items: [
