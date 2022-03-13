@@ -4,7 +4,7 @@
 path:
   - docs # 第一个成员必须是docs
   - 04.极客时间
-  - 06.重学前端
+  - 90.重学前端
 # 要删除的字段 (数组)
 # delete:
 
@@ -15,6 +15,7 @@ add:
 data:
   tags:
     - 极客时间
+    - 重学前端
 
   author:
     name: chst365

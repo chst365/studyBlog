@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs --temp .temp",
+    "dev": "export NODE_OPTIONS=--max_old_space_size=4096 && vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
