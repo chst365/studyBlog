@@ -5,7 +5,7 @@ home: true
 # heroImage: /img/web.png
 
 heroText: chst365's blog
-tagline: Web 前端技术博客，积跬步以至千里，致敬每个爱学习的你。
+tagline: 前端技术博客，积跬步以至千里，致敬每个爱学习的你。
 
 # actionText: 立刻进入 →
 
