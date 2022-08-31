@@ -4,7 +4,7 @@
 path:
   - docs # 第一个成员必须是docs
   - 03.开发必备
-  - 02.网络
+  - 03.操作系统
 # 要删除的字段 (数组)
 # delete:
 
@@ -15,7 +15,7 @@ add:
 data:
   tags:
     - 开发必备
-    - 网络
+    - 操作系统
 
   author:
     name: chst365

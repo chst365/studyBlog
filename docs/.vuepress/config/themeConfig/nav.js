@@ -7,6 +7,7 @@ module.exports = [
         items: [
             { text: 'Git', link: '/pages/7a6999/' },
             { text: '网络', link: '/pages/857e93/' },
+            { text: '操作系统', link: '/pages/d8e2cc/' },
         ]
     },
     {
