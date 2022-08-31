@@ -6,6 +6,7 @@ module.exports = [
         link: '/basic/',
         items: [
             { text: 'Git', link: '/pages/7a6999/' },
+            { text: '网络', link: '/pages/857e93/' },
         ]
     },
     {
@@ -21,6 +22,13 @@ module.exports = [
             { text: '工程化', link: '/pages/cadd60/' },
             { text: 'React', link: '/pages/483d46/' }
         ],
+    },
+    {
+        text: '后端',
+        link: '/basic/',
+        items: [
+            { text: 'Node', link: '/pages/25e852/' }
+        ]
     },
     {
         text: '杂记',
