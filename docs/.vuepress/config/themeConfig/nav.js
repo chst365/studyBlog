@@ -21,7 +21,8 @@ module.exports = [
             { text: 'TypeScript', link: '/pages/b3d0bc/' },
             { text: '性能', link: '/pages/ba2200/' },
             { text: '工程化', link: '/pages/cadd60/' },
-            { text: 'React', link: '/pages/483d46/' }
+            { text: 'React', link: '/pages/483d46/' },
+            { text: '编程题', link: '/pages/35ccf0/' }
         ],
     },
     {
