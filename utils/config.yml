@@ -4,7 +4,7 @@
 path:
   - docs # 第一个成员必须是docs
   - 01.前端
-  - 08.编程题
+  - 09.React技术揭秘
 # 要删除的字段 (数组)
 # delete:
 
@@ -15,7 +15,7 @@ add:
 data:
   tags:
     - 前端
-    - 编程题
+    - React
 
   author:
     name: chst365
