@@ -22,7 +22,9 @@ module.exports = [
             { text: '性能', link: '/pages/ba2200/' },
             { text: '工程化', link: '/pages/cadd60/' },
             { text: 'React', link: '/pages/483d46/' },
-            { text: '编程题', link: '/pages/35ccf0/' }
+            { text: '编程题', link: '/pages/35ccf0/' },
+            { text: 'React技术揭秘', link: '/pages/d382d4/' },
+            { text: '算法', link: '/pages/e1c67e/' }
         ],
     },
     {
