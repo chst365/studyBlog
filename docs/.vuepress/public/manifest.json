@@ -3,8 +3,8 @@
     "short_name": "chst365's blog",
     "display": "standalone",
     "background_color": "#fff",
-    "start_url": "",
-    "scope": "",
+    "start_url": "/",
+    "scope": ".",
     "description": "chst365's blog",
     "icons": [
         {
@@ -13,7 +13,7 @@
             "type": "image/png"
         },
         {
-            "src": "img/512x512.png",
+            "src": "img/360x360.png",
             "sizes": "360x360",
             "type": "image/png"
         }
