@@ -101,8 +101,8 @@ module.exports = [
         '@vuepress/last-updated', // "上次更新"时间格式
         {
             transformer: (timestamp, lang) => {
-                const dayjs = require('dayjs') // https://day.js.org/
-                return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
+                const dayjs = require('dayjs'); // https://day.js.org/
+                return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss');
             },
         },
     ],
@@ -114,8 +114,11 @@ module.exports = [
     '@vuepress/pwa',
     {
         serviceWorker: true,
-        updatePopup: true
+        updatePopup: {
+            message: "发现新内容可用",
+            buttonText: "刷新"
+        }
     }
     ],
     ['@vuepress/nprogress']
-]
+];

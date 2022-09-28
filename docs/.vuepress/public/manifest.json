@@ -1,0 +1,21 @@
+{
+    "name": "chst365's blog",
+    "short_name": "chst365's blog",
+    "display": "standalone",
+    "background_color": "#fff",
+    "start_url": "/studyBlog/",
+    "scope": "/studyBlog/",
+    "description": "chst365's blog",
+    "icons": [
+        {
+            "src": "img/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
