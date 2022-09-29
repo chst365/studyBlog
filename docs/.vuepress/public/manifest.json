@@ -3,18 +3,17 @@
     "short_name": "chst365",
     "display": "standalone",
     "background_color": "#fff",
-    "start_url": "/index.html",
-    "scope": ".",
+    "start_url": ".",
     "description": "chst365's blog",
     "icons": [
         {
-            "src": "img/192x192.png",
-            "sizes": "192x192",
+            "src": "logo52.png",
+            "sizes": "52x52",
             "type": "image/png"
         },
         {
-            "src": "img/360x360.png",
-            "sizes": "360x360",
+            "src": "logo288.png",
+            "sizes": "288x288",
             "type": "image/png"
         }
     ]
