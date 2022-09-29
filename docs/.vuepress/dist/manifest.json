@@ -3,7 +3,8 @@
     "short_name": "chst365",
     "display": "standalone",
     "background_color": "#fff",
-    "start_url": ".",
+    "start_url": "/chst365/",
+    "scope": "/chst365/",
     "description": "chst365's blog",
     "icons": [
         {
