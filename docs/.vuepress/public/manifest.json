@@ -8,13 +8,13 @@
     "description": "chst365's blog",
     "icons": [
         {
-            "src": "logo52.png",
-            "sizes": "52x52",
+            "src": "/img/76x76.png",
+            "sizes": "76x76",
             "type": "image/png"
         },
         {
-            "src": "logo288.png",
-            "sizes": "288x288",
+            "src": "/img/360x360.png",
+            "sizes": "360x360",
             "type": "image/png"
         }
     ]
