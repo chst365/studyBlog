@@ -4,7 +4,7 @@ const themeConfig = require('./config/themeConfig.js');
 
 module.exports = {
     theme: 'vdoing',
-    // base: './',
+    base: '/chst365/',
     title: "chst365's blog",
     markdown: {
         lineNumbers: true, // 代码行号
