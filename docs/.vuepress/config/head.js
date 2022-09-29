@@ -1,7 +1,7 @@
 // head
 module.exports = [
     // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/logo.png' }], //favicons，资源放在public文件夹
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     [
         'meta',
@@ -13,19 +13,19 @@ module.exports = [
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'apple-touch-icon', size: '152x152', href: '/img/apple-touch-icon.png' }],
-    // ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    ['link', { rel: 'mask-icon', href: '/img/76x76.png', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/img/144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    [
-        'script',
-        {
-            'data-website-id': 'd37fd1ba-3ce4-4443-b8d7-88c163c8f9c2',
-            async: 'async',
-            src: 'https://umami.smart-lzgz.cn/umami.js',
-        },
-    ],
+    // [
+    //     'script',
+    //     {
+    //         'data-website-id': 'd37fd1ba-3ce4-4443-b8d7-88c163c8f9c2',
+    //         async: 'async',
+    //         src: 'https://umami.smart-lzgz.cn/umami.js',
+    //     },
+    // ],
     [
         'script',
         {

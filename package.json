@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "export NODE_OPTIONS=--max_old_space_size=4096 && vuepress dev docs --temp .temp",
+    "dev": " vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
@@ -15,11 +15,11 @@
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-nprogress": "^1.8.2",
-    "@vuepress/plugin-pwa": "^1.8.2",
+    "@vuepress/plugin-pwa": "1.9.7",
     "dayjs": "^1.10.4",
     "inquirer": "^8.0.0",
     "json2yaml": "^1.1.0",
-    "vuepress": "^1.8.2",
+    "vuepress": "1.9.7",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-one-click-copy": "^1.0.3",
