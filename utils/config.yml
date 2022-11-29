@@ -3,8 +3,7 @@
 # 需要批量处理的路径，docs文件夹内的文件夹  (数组，映射路径：path[0]/path[1]/path[2] ... )
 path:
   - docs # 第一个成员必须是docs
-  - 01.前端
-  - 09.React技术揭秘
+  - 03.工具
 # 要删除的字段 (数组)
 # delete:
 
@@ -14,8 +13,8 @@ path:
 add:
 data:
   tags:
-    - 前端
-    - React技术揭秘
+    - 工具
+    - 加密/解密
 
   author:
     name: chst365

@@ -35,18 +35,19 @@ module.exports = [
         ]
     },
     {
-        text: '杂记',
-        link: '/notes/',
+        text: '工具',
+        link: '/pages/3f2100/',
         items: [
+            { text: '隐写术', link: '/pages/f04670/' },
         ]
     },
-    {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        items: [
+    // {
+    //     text: '收藏',
+    //     link: '/pages/beb6c0bd8a66cea6/',
+    //     items: [
 
-        ],
-    },
+    //     ],
+    // },
     {
         text: '索引',
         link: '/archives/',
