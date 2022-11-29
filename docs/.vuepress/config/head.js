@@ -10,7 +10,7 @@ module.exports = [
             content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
         },
     ],
-    ['meta', { name: 'baidu_union_verify', content: '852f6133b1e15f53e9b4becad49e6dcb' }],
+    ['meta', { name: 'baidu_union_verify', content: '13620dc44387a3fb16e4981dcc2f874b' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'apple-touch-icon', size: '152x152', href: '/img/apple-touch-icon.png' }],
