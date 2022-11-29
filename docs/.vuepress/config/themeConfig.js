@@ -82,7 +82,7 @@ module.exports = {
     // 页脚信息
     createYear: 2019, // 博客创建年份
     copyrightInfo:
-      'chst365 | MIT License', // 博客版权信息，支持a标签
+      'chst365 | 豫ICP备17031889号-1', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
-}
+};
