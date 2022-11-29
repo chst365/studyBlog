@@ -3,7 +3,7 @@ module.exports = [
     { text: '首页', link: '/' },
     {
         text: '开发必备',
-        link: '/basic/',
+        // link: '/basic/',
         items: [
             { text: 'Git', link: '/pages/7a6999/' },
             { text: '网络', link: '/pages/857e93/' },
