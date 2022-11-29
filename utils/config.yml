@@ -14,7 +14,8 @@ add:
 data:
   tags:
     - 工具
-    - 加密/解密
+    - 加密
+    - 解密
 
   author:
     name: chst365
