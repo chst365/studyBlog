@@ -38,7 +38,7 @@ module.exports = [
         text: '工具',
         // link: '/pages/3f2100/',
         items: [
-            { text: '隐写术', link: '/pages/f04670/' },
+            { text: '编码解码', link: '/pages/3b717c/' },
         ]
     },
     // {
