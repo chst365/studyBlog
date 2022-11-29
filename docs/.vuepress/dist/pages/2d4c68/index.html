@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>二、基础篇：webpack 基础用法 | chst365&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" size="152x152" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/360x360.png" color="#3eaf7c">
+    <script src="/js/matomo.js"></script>
+    <meta name="description" content="">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/img/192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.0798684b.css" as="style"><link rel="preload" href="/assets/js/app.f338cee7.js" as="script"><link rel="preload" href="/assets/js/2.6c5c5aa7.js" as="script"><link rel="preload" href="/assets/js/16.d8b372e4.js" as="script"><link rel="preload" href="/assets/js/3.5cedc995.js" as="script"><link rel="prefetch" href="/assets/js/10.50bfd6fc.js"><link rel="prefetch" href="/assets/js/100.e8a9600c.js"><link rel="prefetch" href="/assets/js/101.beccaaa5.js"><link rel="prefetch" href="/assets/js/102.cfc3357d.js"><link rel="prefetch" href="/assets/js/103.04a090de.js"><link rel="prefetch" href="/assets/js/104.6fefe99b.js"><link rel="prefetch" href="/assets/js/105.b0fdc83a.js"><link rel="prefetch" href="/assets/js/106.59a314a3.js"><link rel="prefetch" href="/assets/js/107.fdba1978.js"><link rel="prefetch" href="/assets/js/108.3d2ee1ff.js"><link rel="prefetch" href="/assets/js/109.57981b97.js"><link rel="prefetch" href="/assets/js/11.04c41ce0.js"><link rel="prefetch" href="/assets/js/110.e0aa4d00.js"><link rel="prefetch" href="/assets/js/111.9f6a13e5.js"><link rel="prefetch" href="/assets/js/112.ee2e6f4b.js"><link rel="prefetch" href="/assets/js/12.b5c453c7.js"><link rel="prefetch" href="/assets/js/13.18d4589e.js"><link rel="prefetch" href="/assets/js/14.64fb9402.js"><link rel="prefetch" href="/assets/js/15.a0edf6f8.js"><link rel="prefetch" href="/assets/js/17.cd8475ec.js"><link rel="prefetch" href="/assets/js/18.b06a1b32.js"><link rel="prefetch" href="/assets/js/19.667c742f.js"><link rel="prefetch" href="/assets/js/20.3d7f0b91.js"><link rel="prefetch" href="/assets/js/21.2599a81e.js"><link rel="prefetch" href="/assets/js/22.f313227b.js"><link rel="prefetch" href="/assets/js/23.71cc4b06.js"><link rel="prefetch" href="/assets/js/24.14697419.js"><link rel="prefetch" href="/assets/js/25.a51f8027.js"><link rel="prefetch" href="/assets/js/26.f2f0f94c.js"><link rel="prefetch" href="/assets/js/27.82697bcb.js"><link rel="prefetch" href="/assets/js/28.5d79e240.js"><link rel="prefetch" href="/assets/js/29.5efdcb78.js"><link rel="prefetch" href="/assets/js/30.e010ec8e.js"><link rel="prefetch" href="/assets/js/31.065e34de.js"><link rel="prefetch" href="/assets/js/32.a6b71b78.js"><link rel="prefetch" href="/assets/js/33.54f13266.js"><link rel="prefetch" href="/assets/js/34.62dbf2fb.js"><link rel="prefetch" href="/assets/js/35.b1b441c2.js"><link rel="prefetch" href="/assets/js/36.6a6518df.js"><link rel="prefetch" href="/assets/js/37.94c006ab.js"><link rel="prefetch" href="/assets/js/38.89e5978d.js"><link rel="prefetch" href="/assets/js/39.8f8ef281.js"><link rel="prefetch" href="/assets/js/4.80ea5dc2.js"><link rel="prefetch" href="/assets/js/40.401a18b4.js"><link rel="prefetch" href="/assets/js/41.26a96691.js"><link rel="prefetch" href="/assets/js/42.597d4d7b.js"><link rel="prefetch" href="/assets/js/43.3fc1e524.js"><link rel="prefetch" href="/assets/js/44.ceb2a895.js"><link rel="prefetch" href="/assets/js/45.730b700c.js"><link rel="prefetch" href="/assets/js/46.63aba4f7.js"><link rel="prefetch" href="/assets/js/47.c14b254e.js"><link rel="prefetch" href="/assets/js/48.c65db2bc.js"><link rel="prefetch" href="/assets/js/49.19f72f62.js"><link rel="prefetch" href="/assets/js/5.67c1ee44.js"><link rel="prefetch" href="/assets/js/50.f8032baf.js"><link rel="prefetch" href="/assets/js/51.69b4cef3.js"><link rel="prefetch" href="/assets/js/52.39931b9b.js"><link rel="prefetch" href="/assets/js/53.e524e0f0.js"><link rel="prefetch" href="/assets/js/54.f949604c.js"><link rel="prefetch" href="/assets/js/55.01c5a4d9.js"><link rel="prefetch" href="/assets/js/56.48194c71.js"><link rel="prefetch" href="/assets/js/57.381d9359.js"><link rel="prefetch" href="/assets/js/58.d18e9c08.js"><link rel="prefetch" href="/assets/js/59.3c1e8a91.js"><link rel="prefetch" href="/assets/js/6.42a5c646.js"><link rel="prefetch" href="/assets/js/60.5a2dbd57.js"><link rel="prefetch" href="/assets/js/61.13e44a8e.js"><link rel="prefetch" href="/assets/js/62.29cdccbe.js"><link rel="prefetch" href="/assets/js/63.aa1f2e23.js"><link rel="prefetch" href="/assets/js/64.2392c236.js"><link rel="prefetch" href="/assets/js/65.2f7ee965.js"><link rel="prefetch" href="/assets/js/66.2ca56503.js"><link rel="prefetch" href="/assets/js/67.fa272887.js"><link rel="prefetch" href="/assets/js/68.7fcc8c58.js"><link rel="prefetch" href="/assets/js/69.564a6d55.js"><link rel="prefetch" href="/assets/js/7.8a9d73f1.js"><link rel="prefetch" href="/assets/js/70.3b36271d.js"><link rel="prefetch" href="/assets/js/71.6c7598c8.js"><link rel="prefetch" href="/assets/js/72.1e3ca27f.js"><link rel="prefetch" href="/assets/js/73.0de79dda.js"><link rel="prefetch" href="/assets/js/74.a48db5ae.js"><link rel="prefetch" href="/assets/js/75.99cee6a1.js"><link rel="prefetch" href="/assets/js/76.276ffa46.js"><link rel="prefetch" href="/assets/js/77.238fb2dc.js"><link rel="prefetch" href="/assets/js/78.6e0b17d9.js"><link rel="prefetch" href="/assets/js/79.760879cc.js"><link rel="prefetch" href="/assets/js/8.67791b1e.js"><link rel="prefetch" href="/assets/js/80.aa12db16.js"><link rel="prefetch" href="/assets/js/81.62948585.js"><link rel="prefetch" href="/assets/js/82.1daec514.js"><link rel="prefetch" href="/assets/js/83.71a3334f.js"><link rel="prefetch" href="/assets/js/84.06830439.js"><link rel="prefetch" href="/assets/js/85.fd3c0124.js"><link rel="prefetch" href="/assets/js/86.925c863e.js"><link rel="prefetch" href="/assets/js/87.2b57d2fa.js"><link rel="prefetch" href="/assets/js/88.a701672e.js"><link rel="prefetch" href="/assets/js/89.480487e7.js"><link rel="prefetch" href="/assets/js/9.51399f58.js"><link rel="prefetch" href="/assets/js/90.29e98c32.js"><link rel="prefetch" href="/assets/js/91.52aed135.js"><link rel="prefetch" href="/assets/js/92.9021af55.js"><link rel="prefetch" href="/assets/js/93.572e603e.js"><link rel="prefetch" href="/assets/js/94.9c31492b.js"><link rel="prefetch" href="/assets/js/95.885efd1a.js"><link rel="prefetch" href="/assets/js/96.015639b1.js"><link rel="prefetch" href="/assets/js/97.00e7d2fc.js"><link rel="prefetch" href="/assets/js/98.e14ec7ab.js"><link rel="prefetch" href="/assets/js/99.f7a10c36.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0798684b.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="chst365's blog" class="logo"> <span class="site-name can-hide">chst365's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发必备" class="dropdown-title"><!----> <span class="title" style="display:;">开发必备</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/7a6999/" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/pages/857e93/" class="nav-link">网络</a></li><li class="dropdown-item"><!----> <a href="/pages/d8e2cc/" class="nav-link">操作系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><!----> <span class="title" style="display:;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/270f88/" class="nav-link">浏览器</a></li><li class="dropdown-item"><!----> <a href="/pages/a1323f/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/pages/d1b7c1/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/pages/b3d0bc/" class="nav-link">TypeScript</a></li><li class="dropdown-item"><!----> <a href="/pages/ba2200/" class="nav-link">性能</a></li><li class="dropdown-item"><!----> <a href="/pages/cadd60/" class="nav-link">工程化</a></li><li class="dropdown-item"><!----> <a href="/pages/483d46/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/35ccf0/" class="nav-link">编程题</a></li><li class="dropdown-item"><!----> <a href="/pages/d382d4/" class="nav-link">React技术揭秘</a></li><li class="dropdown-item"><!----> <a href="/pages/e1c67e/" class="nav-link">算法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><!----> <span class="title" style="display:;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/25e852/" class="nav-link">Node</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><!----> <span class="title" style="display:;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3b717c/" class="nav-link">编码解码</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/logo.png"> <div class="blogger-info"><h3>chst365</h3> <span>DIV工程师</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发必备" class="dropdown-title"><!----> <span class="title" style="display:;">开发必备</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/7a6999/" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/pages/857e93/" class="nav-link">网络</a></li><li class="dropdown-item"><!----> <a href="/pages/d8e2cc/" class="nav-link">操作系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><!----> <span class="title" style="display:;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/270f88/" class="nav-link">浏览器</a></li><li class="dropdown-item"><!----> <a href="/pages/a1323f/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/pages/d1b7c1/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/pages/b3d0bc/" class="nav-link">TypeScript</a></li><li class="dropdown-item"><!----> <a href="/pages/ba2200/" class="nav-link">性能</a></li><li class="dropdown-item"><!----> <a href="/pages/cadd60/" class="nav-link">工程化</a></li><li class="dropdown-item"><!----> <a href="/pages/483d46/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/35ccf0/" class="nav-link">编程题</a></li><li class="dropdown-item"><!----> <a href="/pages/d382d4/" class="nav-link">React技术揭秘</a></li><li class="dropdown-item"><!----> <a href="/pages/e1c67e/" class="nav-link">算法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><!----> <span class="title" style="display:;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/25e852/" class="nav-link">Node</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><!----> <span class="title" style="display:;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3b717c/" class="nav-link">编码解码</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/a1323f/" class="sidebar-link">一、基础篇：webpack与构建发展简史</a></li><li><a href="/pages/2d4c68/" aria-current="page" class="active sidebar-link">二、基础篇：webpack 基础用法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-核心概念" class="sidebar-link">1. 核心概念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-1-entry" class="sidebar-link">1.1 Entry</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-2-output" class="sidebar-link">1.2 Output</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-3-loaders" class="sidebar-link">1.3 Loaders</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#常见的-loaders-有哪些" class="sidebar-link">常见的 Loaders 有哪些？</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#loaders-的用法" class="sidebar-link">Loaders 的用法</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-4-plugins" class="sidebar-link">1.4 plugins</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#常见的-plugins-有哪些" class="sidebar-link">常见的 Plugins 有哪些？</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#plugins-的用法" class="sidebar-link">Plugins 的用法</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-5-mode" class="sidebar-link">1.5 Mode</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#mode-的内置函数功能" class="sidebar-link">Mode 的内置函数功能</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-6-解析-es6" class="sidebar-link">1.6 解析 ES6</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#资源解析-增加-es6-的-babel-preset-配置" class="sidebar-link">资源解析：增加 ES6 的 babel preset 配置</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-7-解析-react-jsx" class="sidebar-link">1.7 解析 React JSX</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-8-解析-css" class="sidebar-link">1.8 解析 CSS</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-9-解析-less-和-sass" class="sidebar-link">1.9 解析 Less 和 SaSS</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-10-解析图片、字体" class="sidebar-link">1.10 解析图片、字体</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#file-loader-用于处理文件" class="sidebar-link">file-loader 用于处理文件</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#url-loader-也可以处理图片和字体" class="sidebar-link">url-loader 也可以处理图片和字体</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-11-webpack-中的文件监听" class="sidebar-link">1.11 webpack 中的文件监听</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#文件监听的原理分析" class="sidebar-link">文件监听的原理分析</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-12-热更新" class="sidebar-link">1.12 热更新</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#webpack-dev-server" class="sidebar-link">webpack-dev-server</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#webpack-dev-middleware" class="sidebar-link">webpack-dev-middleware</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#热更新的原理分析" class="sidebar-link">热更新的原理分析</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-13-文件指纹策略-chunkhash、contenthash-和-hash" class="sidebar-link">1.13 文件指纹策略：chunkhash、contenthash 和 hash</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#什么是文件指纹" class="sidebar-link">什么是文件指纹？</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#文件指纹如何生成" class="sidebar-link">文件指纹如何生成</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#js-的文件指纹设置" class="sidebar-link">JS 的文件指纹设置</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#css-的文件指纹设置" class="sidebar-link">CSS 的文件指纹设置</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#图片的文件指纹设置" class="sidebar-link">图片的文件指纹设置</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#_1-14-html、css-和-js-代码压缩" class="sidebar-link">1.14 HTML、CSS 和 JS 代码压缩</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/2d4c68/#代码压缩" class="sidebar-link">代码压缩</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#js-文件的压缩" class="sidebar-link">JS 文件的压缩</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#css-文件的压缩" class="sidebar-link">CSS 文件的压缩</a></li><li class="sidebar-sub-header"><a href="/pages/2d4c68/#html-文件的压缩" class="sidebar-link">HTML 文件的压缩</a></li></ul></li></ul></li><li><a href="/pages/e8c65e/" class="sidebar-link">三、基础篇：webpack 进阶用法</a></li><li><a href="/pages/14b103/" class="sidebar-link">四、进阶篇：编写可维护的 webpack 构建配置</a></li><li><a href="/pages/4bf87e/" class="sidebar-link">五、进阶篇：webpack 构建速度和体积优化策略</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>性能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编程题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React技术揭秘</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1cd794fe><div class="articleInfo" data-v-1cd794fe><ul class="breadcrumbs" data-v-1cd794fe><li data-v-1cd794fe><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1cd794fe></a></li> <li data-v-1cd794fe><a href="/categories/?category=%E5%89%8D%E7%AB%AF" title="分类" data-v-1cd794fe>前端</a></li> <li data-v-1cd794fe><a href="/categories/?category=webpack" title="分类" data-v-1cd794fe>webpack</a></li> <!----></ul> <div class="info" data-v-1cd794fe><div title="作者" class="author iconfont icon-touxiang" data-v-1cd794fe><a href="https://github.com/chst365" target="_blank" title="作者" class="beLink" data-v-1cd794fe>chst365</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1cd794fe><a href="javascript:;" data-v-1cd794fe>2020-05-30</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">
+          二、基础篇：webpack 基础用法
+        </h1>  <div class="theme-vdoing-content content__default"><p><img src="https://cdn.jsdelivr.net/gh/chst365/bolgImgs/imgs/topImgs/441.jpg" alt=""></p> <h1 id="二、基础篇-webpack-基础用法"><a href="#二、基础篇-webpack-基础用法" class="header-anchor">#</a> 二、基础篇：webpack 基础用法</h1> <h2 id="_1-核心概念"><a href="#_1-核心概念" class="header-anchor">#</a> 1. 核心概念</h2> <h3 id="_1-1-entry"><a href="#_1-1-entry" class="header-anchor">#</a> 1.1 Entry</h3> <p>Entry 用来指定 webpack 的打包入口</p> <h4 id="理解依赖图的含义"><a href="#理解依赖图的含义" class="header-anchor">#</a> 理解依赖图的含义</h4> <p>依赖图的入口是 entry
+对于非代码比如图片、字体依赖也会不断加入到依赖图中
+<img src="https://upload.smart-lzgz.cn/mweb/2020%2007%2019%2015951717116974%2015908366676155%20.jpg" alt="-w722"></p> <h4 id="entry-的用法"><a href="#entry-的用法" class="header-anchor">#</a> Entry 的用法</h4> <ul><li>单入口：entry 是一个字符串<div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: './path/to/my/entry/file.js'
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li>多入口：entry 是一个对象<div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: {
+        app: './src/app.js',
+        adminApp: './src/adminApp.js'
+    }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></li></ul> <h2 id="_1-2-output"><a href="#_1-2-output" class="header-anchor">#</a> 1.2 Output</h2> <p>Output 用来告诉 webpack 如何将编译后的文件输出到磁盘</p> <h4 id="output-的用法"><a href="#output-的用法" class="header-anchor">#</a> Output 的用法</h4> <ul><li><p>单入口配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: './path/to/my/entry/file.js',
+    output: {
+        filename: 'bundle.js',
+        path: __dirname + '/dist'
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li> <li><p>多入口配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: {
+        app: './src/app.js',
+        search: './src/search.js'
+    },
+    output: {
+        filename: '[name].js',          //  通过占位符确保文件名称的唯一
+        path: __dirname + '/dist'
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li></ul> <h2 id="_1-3-loaders"><a href="#_1-3-loaders" class="header-anchor">#</a> 1.3 Loaders</h2> <p>webpack 开箱即用只支持 JS 和 JSON 两种文件类型，通过 Loaders 去支持其他文件类型并且把它们转化成有效的模块，并且可以添加到依赖图中。</p> <p>本身是一个函数，接受源文件作为参数，返回转换的结果。</p> <h3 id="常见的-loaders-有哪些"><a href="#常见的-loaders-有哪些" class="header-anchor">#</a> 常见的 Loaders 有哪些？</h3> <table><thead><tr><th>名称</th> <th>描述</th></tr></thead> <tbody><tr><td>babel-loader</td> <td>转换 ES6、ES7 等 JS 新特性语法</td></tr> <tr><td>css-loader</td> <td>支持.css 文件的加载和解析</td></tr> <tr><td>less-loader</td> <td>将 less 文件转换成 css</td></tr> <tr><td>ts-loader</td> <td>将 Ts 转换成 JS</td></tr> <tr><td>file-loader</td> <td>进行图片、字体等的打包</td></tr> <tr><td>raw-loader</td> <td>将文件以字符串的形式导入</td></tr> <tr><td>thread-loader</td> <td>多进程打包 JS 和 CSS</td></tr></tbody></table> <h3 id="loaders-的用法"><a href="#loaders-的用法" class="header-anchor">#</a> Loaders 的用法</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+
+module.exports = {
+    output: {
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [
+            { test: /\.txt$/, use: 'raw-loader' }       // test 指定匹配规则   use 指定使用的 loader 名称
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_1-4-plugins"><a href="#_1-4-plugins" class="header-anchor">#</a> 1.4 plugins</h2> <p>插件用于 bundle 文件的优化，资源管理和环境变量注入</p> <p>作用于整个构建过程</p> <h3 id="常见的-plugins-有哪些"><a href="#常见的-plugins-有哪些" class="header-anchor">#</a> 常见的 Plugins 有哪些？</h3> <table><thead><tr><th>名称</th> <th>描述</th></tr></thead> <tbody><tr><td>CommonsChunkPlugin</td> <td>将 chunks 相同的模块代码提前成公共 js</td></tr> <tr><td>CleanWebpackPlugin</td> <td>清理构建目录</td></tr> <tr><td>ExtractTextWebpackPlugin</td> <td>将 CSS 从 bundle 文件里提取成一个独立的 CSS 文件</td></tr> <tr><td>CopyWebpackPlugin</td> <td>将文件或者文件夹拷贝到输出目录</td></tr> <tr><td>HtmlWebpackPlugin</td> <td>创建 html 文件去承载输出的 bundle</td></tr> <tr><td>UglifyjsWebpackPlugin</td> <td>压缩 JS</td></tr> <tr><td>ZipWebpackPlugin</td> <td>将打包出的资源生成一个 zip 包</td></tr></tbody></table> <h3 id="plugins-的用法"><a href="#plugins-的用法" class="header-anchor">#</a> Plugins 的用法</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    output: {
+        filename: 'bundle.js'
+    },
+    plugins: [
+        new HtmlWebpackPlugin({templatee: './src/index.html'})          // 放到 plugins 数组里
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_1-5-mode"><a href="#_1-5-mode" class="header-anchor">#</a> 1.5 Mode</h2> <p>Mode 用来指定当前的构建环境是：production、development 还是 none
+设置 mode 可以使用 webpack 内置的函数，默认值为 production</p> <h3 id="mode-的内置函数功能"><a href="#mode-的内置函数功能" class="header-anchor">#</a> Mode 的内置函数功能</h3> <table><thead><tr><th>选型</th> <th>描述</th></tr></thead> <tbody><tr><td>development</td> <td>设置 process.env.NODE_ENV 的值为 development .开启 NamedChunksPlugin 和 NamedModulesPlugin .</td></tr> <tr><td>production</td> <td>设置 process.env.NODE_ENV 的值为 production .开启 FlagDependencyUsagePlugin,FlagIncludedChunksPlugin,ModuleConcatenationPlugin,NoEmitOnErrorsPlugin,OccurrenceOrderPlguin,SideEffectsFlagPlugin 和 TerserPlugin</td></tr> <tr><td>none</td> <td>不开启任何优化选型</td></tr></tbody></table> <h2 id="_1-6-解析-es6"><a href="#_1-6-解析-es6" class="header-anchor">#</a> 1.6 解析 ES6</h2> <p>使用 babel-loader
+babel 的配置文件是：.babelrc</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader'
+            }
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="资源解析-增加-es6-的-babel-preset-配置"><a href="#资源解析-增加-es6-的-babel-preset-配置" class="header-anchor">#</a> 资源解析：增加 ES6 的 babel preset 配置</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;presets&quot;: [
+        &quot;@babel/preset-env&quot;                 // 增加 ES6 的 babel preset 配置
+    ],
+    &quot;plugins&quot;: [
+        &quot;@babel/proposal-class-properties&quot;
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_1-7-解析-react-jsx"><a href="#_1-7-解析-react-jsx" class="header-anchor">#</a> 1.7 解析 React JSX</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;presets&quot;: [
+        &quot;@babel/preset-env&quot;,
+        &quot;@babel/preset-react&quot;                   // 增加 React 的 babel preset 配置
+    ],
+    &quot;plugins&quot;: [
+        &quot;@babel/proposal-class-properties&quot;
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_1-8-解析-css"><a href="#_1-8-解析-css" class="header-anchor">#</a> 1.8 解析 CSS</h2> <p>css-loader 用于加载 .css 文件，并且转换成 commonjs 对象
+style-loader 将样式通过<code>&lt;style&gt;</code>标签插入到 head 中</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            }
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="_1-9-解析-less-和-sass"><a href="#_1-9-解析-less-和-sass" class="header-anchor">#</a> 1.9 解析 Less 和 SaSS</h2> <p>less-loader 用于将 less 转换成 css</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
+                ]
+            }
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="_1-10-解析图片、字体"><a href="#_1-10-解析图片、字体" class="header-anchor">#</a> 1.10 解析图片、字体</h2> <h3 id="file-loader-用于处理文件"><a href="#file-loader-用于处理文件" class="header-anchor">#</a> file-loader 用于处理文件</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            // 解析图片
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            // 解析字体
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="url-loader-也可以处理图片和字体"><a href="#url-loader-也可以处理图片和字体" class="header-anchor">#</a> url-loader 也可以处理图片和字体</h3> <p>可以设置较小资源自动 base64</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            // 解析图片
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 10240
+                    }
+                }]
+            },
+            // 解析字体
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h2 id="_1-11-webpack-中的文件监听"><a href="#_1-11-webpack-中的文件监听" class="header-anchor">#</a> 1.11 webpack 中的文件监听</h2> <p>文件监听是在发现源码发生变化时，自动重新构建出新的输出文件。
+webpack 开启监听模式，有两种方式：</p> <ul><li>启动 webpack 命令时，带上 --watch 参数</li> <li>在配置 webpack.config.js 中设置 watch: true</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+&quot;name&quot;: &quot;hello-webpack&quot;,
+&quot;version&quot;: &quot;1.0.0&quot;,
+&quot;description&quot;: &quot;Hello webpack&quot;,
+&quot;main&quot;: &quot;index.js&quot;,
+&quot;scripts&quot;: {
+&quot;build&quot;: &quot;webpack &quot;,
++ &quot;watch&quot;: &quot;webpack --watch&quot;
+},
+&quot;keywords&quot;: [],
+&quot;author&quot;: &quot;&quot;,
+&quot;license&quot;: &quot;ISC&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>唯一缺陷： 每次需要手动刷新浏览器</p> <h3 id="文件监听的原理分析"><a href="#文件监听的原理分析" class="header-anchor">#</a> 文件监听的原理分析</h3> <p>轮询判断文件的最后编辑时间是否变化
+某个文件发生了变化，并不会立刻告诉监听者，而是先缓存起来，等 aggregateTimeout</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.export = {
+//默认 false，也就是不不开启
+watch: true, //只有开启监听模式时，watchOptions才有意义 wathcOptions: {
+//默认为空，不监听的文件或者文件夹，支持正则匹配
+ignored: /node_modules/,
+//监听到变化发生后会等300ms再去执行，默认300ms
+aggregateTimeout: 300, //判断文件是否发生变化是通过不停询问系统指定文件有没有变化实现的，默认每秒问1000次 poll: 1000
+} }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="_1-12-热更新"><a href="#_1-12-热更新" class="header-anchor">#</a> 1.12 热更新</h2> <h3 id="webpack-dev-server"><a href="#webpack-dev-server" class="header-anchor">#</a> webpack-dev-server</h3> <p>WDS 不刷新浏览器
+WDS 不输出文件，而是放在内存中
+使用 HotModuleReplacementPlugin 插件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+&quot;name&quot;: &quot;hello-webpack&quot;,
+&quot;version&quot;: &quot;1.0.0&quot;,
+&quot;description&quot;: &quot;Hello webpack&quot;,
+&quot;main&quot;: &quot;index.js&quot;,
+&quot;scripts&quot;: {
+&quot;build&quot;: &quot;webpack &quot;,
+&quot;dev&quot;: &quot;webpack-dev-server --open&quot;
+},
+&quot;keywords&quot;: [],
+&quot;author&quot;: &quot;&quot;,
+&quot;license&quot;: &quot;ISC&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="webpack-dev-middleware"><a href="#webpack-dev-middleware" class="header-anchor">#</a> webpack-dev-middleware</h3> <p>WDM 将 webpack 输出的文件传输给服务器
+适用于灵活的定制场景</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const express = require('express');
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+
+const app = express();
+const config = require('./webpack.config.js');
+const compiler = webpack(config);
+
+app.use(webpackDevMiddleware(compiler, {
+    publicPath: config.output.publicPath
+}));
+
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000\n');
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="热更新的原理分析"><a href="#热更新的原理分析" class="header-anchor">#</a> 热更新的原理分析</h3> <p>Webpack Compile: 将 JS 编译成 Bundle
+HMR Server: 将热更新的文件输出给 HMR Rumtime
+Bundle server: 提供文件在浏览器的访问
+HMR Rumtime: 会被注入到浏览器，更新文件的变化
+bundle.js: 构建输出的文件
+<img src="https://upload.smart-lzgz.cn/mweb/2020%2007%2019%2015951717116987%2015910212856437%20.jpg" alt="-w713"></p> <h2 id="_1-13-文件指纹策略-chunkhash、contenthash-和-hash"><a href="#_1-13-文件指纹策略-chunkhash、contenthash-和-hash" class="header-anchor">#</a> 1.13 文件指纹策略：chunkhash、contenthash 和 hash</h2> <h3 id="什么是文件指纹"><a href="#什么是文件指纹" class="header-anchor">#</a> 什么是文件指纹？</h3> <p>打包后输出的文件名的后缀
+<img src="https://upload.smart-lzgz.cn/mweb/2020%2007%2019%2015951717116998%2015910216361692%20.jpg" alt="-w865"></p> <h3 id="文件指纹如何生成"><a href="#文件指纹如何生成" class="header-anchor">#</a> 文件指纹如何生成</h3> <p>Hash: 和整个项目的构建相关，只要项目文件有修改，整个项目构建的 hash 值就会更改
+Chunkhash: 和 webpack 打包的 chunk 有关，不同的 entry 会生成不同的 chunkhash 值
+Contenthash: 根据文件内容来定义 hash，文件内容不变，则 contenthash 不变</p> <h3 id="js-的文件指纹设置"><a href="#js-的文件指纹设置" class="header-anchor">#</a> JS 的文件指纹设置</h3> <p>设置 output 的 filename，使用 [chunkhash]</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: {
+        app: './src/app.js',
+        search: './src/search.js'
+    },
+    output: {
+        filename: '[name][chunkhash:8].js',
+        path: __dirname + '/dist'
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="css-的文件指纹设置"><a href="#css-的文件指纹设置" class="header-anchor">#</a> CSS 的文件指纹设置</h3> <p>设置 MiniCssExtractPlugin 的 filename,
+使用 [contenthash]</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: {
+        app: './src/app.js',
+        search: './src/search.js'
+    },
+    output: {
+        filename: '[name][chunkhash:8].js',
+        path: __dirname + '/dist'
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: `[name][contenthash:8].css`
+        });
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="图片的文件指纹设置"><a href="#图片的文件指纹设置" class="header-anchor">#</a> 图片的文件指纹设置</h3> <p>设置 file-loader 的 name，使用 [hash]</p> <table><thead><tr><th>占位符名称</th> <th>含义</th></tr></thead> <tbody><tr><td>[ext]</td> <td>资源后缀名</td></tr> <tr><td>[name]</td> <td>文件名称</td></tr> <tr><td>[path]</td> <td>文件的相对路径</td></tr> <tr><td>[folder]</td> <td>文件所在的文件夹</td></tr> <tr><td>[contenthash]</td> <td>文件的内容 hash，默认是 md5 生成</td></tr> <tr><td>[hash]</td> <td>文件内容的 hash，默认是 md5 生成</td></tr> <tr><td>[emoji]</td> <td>一个随机的指代文件内容的 emoj</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path');
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: 'img/[name][hash:8].[ext]'
+                    }
+                }]
+            }
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="_1-14-html、css-和-js-代码压缩"><a href="#_1-14-html、css-和-js-代码压缩" class="header-anchor">#</a> 1.14 HTML、CSS 和 JS 代码压缩</h2> <h3 id="代码压缩"><a href="#代码压缩" class="header-anchor">#</a> 代码压缩</h3> <ul><li>HTML 压缩</li> <li>CSS 压缩</li> <li>JS 压缩
+<img src="https://upload.smart-lzgz.cn/mweb/2020%2007%2019%2015951717117013%2015910245814086%20.jpg" alt="-w628"></li></ul> <h3 id="js-文件的压缩"><a href="#js-文件的压缩" class="header-anchor">#</a> JS 文件的压缩</h3> <p>内置了 uglifyjs-webpack-plugin</p> <h3 id="css-文件的压缩"><a href="#css-文件的压缩" class="header-anchor">#</a> CSS 文件的压缩</h3> <p>使用 optimize-css-assets-webpack-plugin
+同时使用 cssnano</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: {
+        app: './src/app.js',
+        search: './src/search.js'
+    },
+    output: {
+        filename: '[name][chunkhash:8].js',
+        path: __dirname + '/dist'
+    },
+    plugins: [
+        new OptimizeCSSAssetsPlugin({
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano')
+        })
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="html-文件的压缩"><a href="#html-文件的压缩" class="header-anchor">#</a> HTML 文件的压缩</h3> <p>修改 html-webpack-plugin,设置压缩参数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    entry: {
+        app: './src/app.js',
+        search: './src/search.js'
+    },
+    output: {
+        filename: '[name][chunkhash:8].js',
+        path: __dirname + '/dist'
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'src/search.html'),
+            filename: 'search.html',
+            chunks: ['search' ],
+            inject: true,
+            minify: {
+                html5: true,
+                collapseWhitespace: true,
+                preservelLinBreaks: false,
+                minifyCSS: true,
+                minifyJS: true,
+                removeComments: false
+            }
+        })
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div></div></div>  <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=%E5%B7%A5%E7%A8%8B%E5%8C%96" title="标签">#工程化</a><a href="/tags/?tag=webpack" title="标签">#webpack</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021/09/14, 13:59:36</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/a1323f/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">一、基础篇：webpack与构建发展简史</div></a> <a href="/pages/e8c65e/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">三、基础篇：webpack 进阶用法</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/a1323f/" class="prev">一、基础篇：webpack与构建发展简史</a></span> <span class="next"><a href="/pages/e8c65e/">三、基础篇：webpack 进阶用法</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/3da9ac/"><div>开发必备</div></a> <span>11-29</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/ece736/"><div>工具</div></a> <span>11-29</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/c808f3/"><div>后端</div></a> <span>11-29</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:chstz_365@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/chst365" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2022
+    <span>chst365 | 豫ICP备17031889号-1</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div><!----></div></div>
+    <script src="/assets/js/app.f338cee7.js" defer></script><script src="/assets/js/2.6c5c5aa7.js" defer></script><script src="/assets/js/16.d8b372e4.js" defer></script><script src="/assets/js/3.5cedc995.js" defer></script>
+  </body>
+</html>

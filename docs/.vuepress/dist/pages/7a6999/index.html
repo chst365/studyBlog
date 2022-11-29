@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git使用 | chst365&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" size="152x152" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/360x360.png" color="#3eaf7c">
+    <script src="/js/matomo.js"></script>
+    <meta name="description" content="">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/img/192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.0798684b.css" as="style"><link rel="preload" href="/assets/js/app.f338cee7.js" as="script"><link rel="preload" href="/assets/js/2.6c5c5aa7.js" as="script"><link rel="preload" href="/assets/js/95.885efd1a.js" as="script"><link rel="preload" href="/assets/js/3.5cedc995.js" as="script"><link rel="prefetch" href="/assets/js/10.50bfd6fc.js"><link rel="prefetch" href="/assets/js/100.e8a9600c.js"><link rel="prefetch" href="/assets/js/101.beccaaa5.js"><link rel="prefetch" href="/assets/js/102.cfc3357d.js"><link rel="prefetch" href="/assets/js/103.04a090de.js"><link rel="prefetch" href="/assets/js/104.6fefe99b.js"><link rel="prefetch" href="/assets/js/105.b0fdc83a.js"><link rel="prefetch" href="/assets/js/106.59a314a3.js"><link rel="prefetch" href="/assets/js/107.fdba1978.js"><link rel="prefetch" href="/assets/js/108.3d2ee1ff.js"><link rel="prefetch" href="/assets/js/109.57981b97.js"><link rel="prefetch" href="/assets/js/11.04c41ce0.js"><link rel="prefetch" href="/assets/js/110.e0aa4d00.js"><link rel="prefetch" href="/assets/js/111.9f6a13e5.js"><link rel="prefetch" href="/assets/js/112.ee2e6f4b.js"><link rel="prefetch" href="/assets/js/12.b5c453c7.js"><link rel="prefetch" href="/assets/js/13.18d4589e.js"><link rel="prefetch" href="/assets/js/14.64fb9402.js"><link rel="prefetch" href="/assets/js/15.a0edf6f8.js"><link rel="prefetch" href="/assets/js/16.d8b372e4.js"><link rel="prefetch" href="/assets/js/17.cd8475ec.js"><link rel="prefetch" href="/assets/js/18.b06a1b32.js"><link rel="prefetch" href="/assets/js/19.667c742f.js"><link rel="prefetch" href="/assets/js/20.3d7f0b91.js"><link rel="prefetch" href="/assets/js/21.2599a81e.js"><link rel="prefetch" href="/assets/js/22.f313227b.js"><link rel="prefetch" href="/assets/js/23.71cc4b06.js"><link rel="prefetch" href="/assets/js/24.14697419.js"><link rel="prefetch" href="/assets/js/25.a51f8027.js"><link rel="prefetch" href="/assets/js/26.f2f0f94c.js"><link rel="prefetch" href="/assets/js/27.82697bcb.js"><link rel="prefetch" href="/assets/js/28.5d79e240.js"><link rel="prefetch" href="/assets/js/29.5efdcb78.js"><link rel="prefetch" href="/assets/js/30.e010ec8e.js"><link rel="prefetch" href="/assets/js/31.065e34de.js"><link rel="prefetch" href="/assets/js/32.a6b71b78.js"><link rel="prefetch" href="/assets/js/33.54f13266.js"><link rel="prefetch" href="/assets/js/34.62dbf2fb.js"><link rel="prefetch" href="/assets/js/35.b1b441c2.js"><link rel="prefetch" href="/assets/js/36.6a6518df.js"><link rel="prefetch" href="/assets/js/37.94c006ab.js"><link rel="prefetch" href="/assets/js/38.89e5978d.js"><link rel="prefetch" href="/assets/js/39.8f8ef281.js"><link rel="prefetch" href="/assets/js/4.80ea5dc2.js"><link rel="prefetch" href="/assets/js/40.401a18b4.js"><link rel="prefetch" href="/assets/js/41.26a96691.js"><link rel="prefetch" href="/assets/js/42.597d4d7b.js"><link rel="prefetch" href="/assets/js/43.3fc1e524.js"><link rel="prefetch" href="/assets/js/44.ceb2a895.js"><link rel="prefetch" href="/assets/js/45.730b700c.js"><link rel="prefetch" href="/assets/js/46.63aba4f7.js"><link rel="prefetch" href="/assets/js/47.c14b254e.js"><link rel="prefetch" href="/assets/js/48.c65db2bc.js"><link rel="prefetch" href="/assets/js/49.19f72f62.js"><link rel="prefetch" href="/assets/js/5.67c1ee44.js"><link rel="prefetch" href="/assets/js/50.f8032baf.js"><link rel="prefetch" href="/assets/js/51.69b4cef3.js"><link rel="prefetch" href="/assets/js/52.39931b9b.js"><link rel="prefetch" href="/assets/js/53.e524e0f0.js"><link rel="prefetch" href="/assets/js/54.f949604c.js"><link rel="prefetch" href="/assets/js/55.01c5a4d9.js"><link rel="prefetch" href="/assets/js/56.48194c71.js"><link rel="prefetch" href="/assets/js/57.381d9359.js"><link rel="prefetch" href="/assets/js/58.d18e9c08.js"><link rel="prefetch" href="/assets/js/59.3c1e8a91.js"><link rel="prefetch" href="/assets/js/6.42a5c646.js"><link rel="prefetch" href="/assets/js/60.5a2dbd57.js"><link rel="prefetch" href="/assets/js/61.13e44a8e.js"><link rel="prefetch" href="/assets/js/62.29cdccbe.js"><link rel="prefetch" href="/assets/js/63.aa1f2e23.js"><link rel="prefetch" href="/assets/js/64.2392c236.js"><link rel="prefetch" href="/assets/js/65.2f7ee965.js"><link rel="prefetch" href="/assets/js/66.2ca56503.js"><link rel="prefetch" href="/assets/js/67.fa272887.js"><link rel="prefetch" href="/assets/js/68.7fcc8c58.js"><link rel="prefetch" href="/assets/js/69.564a6d55.js"><link rel="prefetch" href="/assets/js/7.8a9d73f1.js"><link rel="prefetch" href="/assets/js/70.3b36271d.js"><link rel="prefetch" href="/assets/js/71.6c7598c8.js"><link rel="prefetch" href="/assets/js/72.1e3ca27f.js"><link rel="prefetch" href="/assets/js/73.0de79dda.js"><link rel="prefetch" href="/assets/js/74.a48db5ae.js"><link rel="prefetch" href="/assets/js/75.99cee6a1.js"><link rel="prefetch" href="/assets/js/76.276ffa46.js"><link rel="prefetch" href="/assets/js/77.238fb2dc.js"><link rel="prefetch" href="/assets/js/78.6e0b17d9.js"><link rel="prefetch" href="/assets/js/79.760879cc.js"><link rel="prefetch" href="/assets/js/8.67791b1e.js"><link rel="prefetch" href="/assets/js/80.aa12db16.js"><link rel="prefetch" href="/assets/js/81.62948585.js"><link rel="prefetch" href="/assets/js/82.1daec514.js"><link rel="prefetch" href="/assets/js/83.71a3334f.js"><link rel="prefetch" href="/assets/js/84.06830439.js"><link rel="prefetch" href="/assets/js/85.fd3c0124.js"><link rel="prefetch" href="/assets/js/86.925c863e.js"><link rel="prefetch" href="/assets/js/87.2b57d2fa.js"><link rel="prefetch" href="/assets/js/88.a701672e.js"><link rel="prefetch" href="/assets/js/89.480487e7.js"><link rel="prefetch" href="/assets/js/9.51399f58.js"><link rel="prefetch" href="/assets/js/90.29e98c32.js"><link rel="prefetch" href="/assets/js/91.52aed135.js"><link rel="prefetch" href="/assets/js/92.9021af55.js"><link rel="prefetch" href="/assets/js/93.572e603e.js"><link rel="prefetch" href="/assets/js/94.9c31492b.js"><link rel="prefetch" href="/assets/js/96.015639b1.js"><link rel="prefetch" href="/assets/js/97.00e7d2fc.js"><link rel="prefetch" href="/assets/js/98.e14ec7ab.js"><link rel="prefetch" href="/assets/js/99.f7a10c36.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0798684b.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="chst365's blog" class="logo"> <span class="site-name can-hide">chst365's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发必备" class="dropdown-title"><!----> <span class="title" style="display:;">开发必备</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/7a6999/" aria-current="page" class="nav-link router-link-exact-active router-link-active">Git</a></li><li class="dropdown-item"><!----> <a href="/pages/857e93/" class="nav-link">网络</a></li><li class="dropdown-item"><!----> <a href="/pages/d8e2cc/" class="nav-link">操作系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><!----> <span class="title" style="display:;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/270f88/" class="nav-link">浏览器</a></li><li class="dropdown-item"><!----> <a href="/pages/a1323f/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/pages/d1b7c1/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/pages/b3d0bc/" class="nav-link">TypeScript</a></li><li class="dropdown-item"><!----> <a href="/pages/ba2200/" class="nav-link">性能</a></li><li class="dropdown-item"><!----> <a href="/pages/cadd60/" class="nav-link">工程化</a></li><li class="dropdown-item"><!----> <a href="/pages/483d46/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/35ccf0/" class="nav-link">编程题</a></li><li class="dropdown-item"><!----> <a href="/pages/d382d4/" class="nav-link">React技术揭秘</a></li><li class="dropdown-item"><!----> <a href="/pages/e1c67e/" class="nav-link">算法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><!----> <span class="title" style="display:;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/25e852/" class="nav-link">Node</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><!----> <span class="title" style="display:;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3b717c/" class="nav-link">编码解码</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/logo.png"> <div class="blogger-info"><h3>chst365</h3> <span>DIV工程师</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发必备" class="dropdown-title"><!----> <span class="title" style="display:;">开发必备</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/7a6999/" aria-current="page" class="nav-link router-link-exact-active router-link-active">Git</a></li><li class="dropdown-item"><!----> <a href="/pages/857e93/" class="nav-link">网络</a></li><li class="dropdown-item"><!----> <a href="/pages/d8e2cc/" class="nav-link">操作系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><!----> <span class="title" style="display:;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/270f88/" class="nav-link">浏览器</a></li><li class="dropdown-item"><!----> <a href="/pages/a1323f/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/pages/d1b7c1/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/pages/b3d0bc/" class="nav-link">TypeScript</a></li><li class="dropdown-item"><!----> <a href="/pages/ba2200/" class="nav-link">性能</a></li><li class="dropdown-item"><!----> <a href="/pages/cadd60/" class="nav-link">工程化</a></li><li class="dropdown-item"><!----> <a href="/pages/483d46/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/35ccf0/" class="nav-link">编程题</a></li><li class="dropdown-item"><!----> <a href="/pages/d382d4/" class="nav-link">React技术揭秘</a></li><li class="dropdown-item"><!----> <a href="/pages/e1c67e/" class="nav-link">算法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><!----> <span class="title" style="display:;">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/25e852/" class="nav-link">Node</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><!----> <span class="title" style="display:;">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3b717c/" class="nav-link">编码解码</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Git</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/7a6999/" aria-current="page" class="active sidebar-link">Git使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/7a6999/#一、定义" class="sidebar-link">一、定义</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#二、仓库" class="sidebar-link">二、仓库</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/7a6999/#_2-1-本地仓库和远程仓库" class="sidebar-link">2.1 本地仓库和远程仓库</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#三、分支" class="sidebar-link">三、分支</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-1-查看分支" class="sidebar-link">3.1 查看分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-2-创建分支" class="sidebar-link">3.2 创建分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-3-删除分支" class="sidebar-link">3.3 删除分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-4-切换分支" class="sidebar-link">3.4 切换分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-5-合并分支" class="sidebar-link">3.5 合并分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-6-储藏分支" class="sidebar-link">3.6 储藏分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-7-拉取远程分支" class="sidebar-link">3.7 拉取远程分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-8-推送分支" class="sidebar-link">3.8 推送分支</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#_3-9-子分支同步主分支" class="sidebar-link">3.9 子分支同步主分支</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#四、版本标签" class="sidebar-link">四、版本标签</a></li><li class="sidebar-sub-header"><a href="/pages/7a6999/#五、代理" class="sidebar-link">五、代理</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作系统</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1cd794fe><div class="articleInfo" data-v-1cd794fe><ul class="breadcrumbs" data-v-1cd794fe><li data-v-1cd794fe><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1cd794fe></a></li> <li data-v-1cd794fe><a href="/categories/?category=%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87" title="分类" data-v-1cd794fe>开发必备</a></li> <li data-v-1cd794fe><a href="/categories/?category=Git" title="分类" data-v-1cd794fe>Git</a></li> <!----></ul> <div class="info" data-v-1cd794fe><div title="作者" class="author iconfont icon-touxiang" data-v-1cd794fe><a href="https://github.com/chst365" target="_blank" title="作者" class="beLink" data-v-1cd794fe>chst365</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1cd794fe><a href="javascript:;" data-v-1cd794fe>2021-07-07</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">
+          Git使用
+        </h1>  <div class="theme-vdoing-content content__default"><p><img src="https://cdn.jsdelivr.net/gh/chst365/bolgImgs/imgs/topImgs/125.jpg" alt=""></p> <h2 id="一、定义"><a href="#一、定义" class="header-anchor">#</a> 一、定义</h2> <p>远程主分支叫 <code>origin/master</code></p> <p>本地主分支叫 <code>master</code></p> <p>当前分支叫 <code>head</code></p> <h2 id="二、仓库"><a href="#二、仓库" class="header-anchor">#</a> 二、仓库</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 克隆仓库</span>
+git clone xxx
+
+<span class="token comment">// 添加修改</span>
+git add xxx
+
+<span class="token comment">// 添加所有修改</span>
+git add <span class="token punctuation">.</span>
+
+<span class="token comment">// 添加 commit</span>
+git commit <span class="token operator">-</span>m <span class="token string">&quot;xxx&quot;</span>
+
+<span class="token comment">// 提交修改到远程仓库</span>
+git push
+
+<span class="token comment">// 拉取远程仓库并合并到主分支</span>
+git pull
+
+<span class="token comment">// 远程仓库强制覆盖本地主分支</span>
+git fetch <span class="token operator">--</span>all <span class="token operator">&amp;&amp;</span> git reset <span class="token operator">--</span>hard origin<span class="token operator">/</span>master <span class="token operator">&amp;&amp;</span> git pull
+
+<span class="token comment">// 查看项目的情况</span>
+git status
+
+<span class="token comment">// 重设仓库(将远程仓库 yyy 移动到新仓库 xxx 内）</span>
+<span class="token comment">// 先在 github 上建立远程新仓库 xxx</span>
+<span class="token comment">// 后克隆远程仓库 yyy</span>
+<span class="token comment">// 重设链接</span>
+git remote rm origin
+git remote add origin git@github<span class="token punctuation">.</span>com<span class="token operator">:</span>Taraxa<span class="token operator">-</span>project<span class="token operator">/</span>taraxa<span class="token operator">-</span>floret<span class="token operator">-</span>backend<span class="token punctuation">.</span>git
+git push <span class="token operator">--</span>set<span class="token operator">-</span>upstream origin master
+
+git clone yyy
+git remote <span class="token operator">-</span>v
+git remote rm <span class="token function">origin</span> <span class="token punctuation">(</span>移除远程仓库链接 yyy）
+git remote add origin xxx （重设远程仓库链接为 xxx<span class="token punctuation">)</span>
+
+git pull
+git branch <span class="token operator">--</span>set<span class="token operator">-</span>upstream<span class="token operator">-</span>to<span class="token operator">=</span>origin<span class="token operator">/</span>master master
+git pull
+git push <span class="token operator">--</span>set<span class="token operator">-</span>upstream origin <span class="token function">master</span> <span class="token punctuation">(</span>推送本地仓库到远程仓库 xxx<span class="token punctuation">)</span>
+
+git branch <span class="token operator">--</span>set<span class="token operator">-</span>upstream<span class="token operator">-</span>to<span class="token operator">=</span>origin<span class="token operator">/</span>master master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="_2-1-本地仓库和远程仓库"><a href="#_2-1-本地仓库和远程仓库" class="header-anchor">#</a> 2.1 本地仓库和远程仓库</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 查看远程仓库名称</span>
+git remote
+
+<span class="token comment">// 查看远程仓库详细信息</span>
+git remote <span class="token operator">-</span>v
+
+<span class="token comment">// 推送主分支到远程主仓库</span>
+git push origin <span class="token function">master</span> <span class="token punctuation">(</span>远程仓库叫 origin<span class="token punctuation">,</span>本地主仓库叫 master<span class="token punctuation">)</span>
+
+<span class="token comment">// 推送新分支到远程分支仓库</span>
+git push origin dev <span class="token number">5.</span>将本地仓库的分支重新指向远程仓库的最新版（避免远程仓库分叉）
+git rebase （相当于先取消本地的提交，然后拉取远程最新版，然后将取消的提交添加到最新版上去）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="三、分支"><a href="#三、分支" class="header-anchor">#</a> 三、分支</h2> <h3 id="_3-1-查看分支"><a href="#_3-1-查看分支" class="header-anchor">#</a> 3.1 查看分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 查看本地和远程所有分支</span>
+git branch <span class="token operator">-</span>a
+
+<span class="token comment">// 查看远程分支</span>
+git branch <span class="token operator">-</span>r
+
+<span class="token comment">// 拉取所有分支</span>
+git pull <span class="token operator">--</span>all
+
+<span class="token comment">// 创建远程分支</span>
+git checkout <span class="token operator">-</span>b 本地分支 origin<span class="token operator">/</span>远程分支
+
+<span class="token comment">// 删除本地分支</span>
+git branch <span class="token operator">-</span>d 分支名
+
+<span class="token comment">// 删除远程分支</span>
+git push origin –<span class="token keyword">delete</span>  分支名
+
+<span class="token comment">// 以下假设新分支的名字是 dev</span>
+
+<span class="token comment">// 显示分支</span>
+git branch 查看本地分支
+git branch <span class="token operator">-</span>r 查看远程分支
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="_3-2-创建分支"><a href="#_3-2-创建分支" class="header-anchor">#</a> 3.2 创建分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 直接拉取远程分支</span>
+git fetch origin dev
+
+<span class="token comment">// 本地</span>
+git branch dev
+
+<span class="token comment">// 创建新分支（同时在本地和远程仓库创建）</span>
+git checkout <span class="token operator">-</span>b dev
+git push <span class="token operator">--</span>set<span class="token operator">-</span>upstream origin <span class="token function">dev</span><span class="token punctuation">(</span>为当前 dev 分支在远程 origin 创建同名推送分支）
+
+<span class="token comment">// 将本地分支 dev 的链接指向远程的分支 origin/dev（在本地仓库的分支是独立建立的时候使用）</span>
+git branch <span class="token operator">--</span>set<span class="token operator">-</span>upstream<span class="token operator">-</span>to<span class="token operator">=</span>origin<span class="token operator">/</span>dev dev
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="_3-3-删除分支"><a href="#_3-3-删除分支" class="header-anchor">#</a> 3.3 删除分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+git branch <span class="token operator">-</span>d dev（删除前应该先合并分支）
+
+<span class="token comment">// 强制删除没有被合并的分支</span>
+git branch <span class="token operator">-</span><span class="token constant">D</span> dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_3-4-切换分支"><a href="#_3-4-切换分支" class="header-anchor">#</a> 3.4 切换分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code>git checkout devl
+
+<span class="token comment">// 创建并切换到分支</span>
+git checkout <span class="token operator">-</span>b dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_3-5-合并分支"><a href="#_3-5-合并分支" class="header-anchor">#</a> 3.5 合并分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 先切换回主分支</span>
+git checkout master
+
+<span class="token comment">// 再合并分支到当前分支</span>
+git merge dev
+
+<span class="token comment">// 采用非快速合并分支的方式合并分支</span>
+git merge <span class="token operator">--</span>no<span class="token operator">-</span>ff <span class="token operator">-</span>m <span class="token string">&quot;xxx&quot;</span> dev
+
+<span class="token comment">// 查看分支合并历史图</span>
+git log <span class="token operator">--</span>graph
+git log <span class="token operator">--</span>graph <span class="token operator">--</span>pretty<span class="token operator">=</span>oneline <span class="token operator">--</span>abbrev<span class="token operator">-</span>commit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_3-6-储藏分支"><a href="#_3-6-储藏分支" class="header-anchor">#</a> 3.6 储藏分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 临时储藏当前分支</span>
+git stash
+
+<span class="token comment">// 查看储藏记录</span>
+git stash list
+
+<span class="token comment">// 恢复储藏</span>
+git stash apply
+
+<span class="token comment">// 删除储藏记录</span>
+git stash drop
+
+<span class="token comment">// 恢复并删除储藏记录</span>
+git stash pop
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="_3-7-拉取远程分支"><a href="#_3-7-拉取远程分支" class="header-anchor">#</a> 3.7 拉取远程分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 直接拉取</span>
+git clone <span class="token operator">-</span>b 远程分支名 仓库地址
+
+<span class="token comment">// 本地已有仓库</span>
+<span class="token comment">// 查看远程分支</span>
+git branch <span class="token operator">-</span>r
+
+<span class="token comment">// 创建本地分支并关联远程分支</span>
+git checkout <span class="token operator">-</span>b 本地分支 origin<span class="token operator">/</span>远程分支
+
+<span class="token comment">// 已有本地分支创建关联</span>
+git branch <span class="token operator">--</span>set<span class="token operator">-</span>upstream<span class="token operator">-</span>to origin<span class="token operator">/</span>远程分支名 本地分支名
+
+<span class="token comment">// 拉取</span>
+git pull
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="_3-8-推送分支"><a href="#_3-8-推送分支" class="header-anchor">#</a> 3.8 推送分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code>git push origin aeneas<span class="token operator">:</span>aeneas
+<span class="token comment">// 推送本地分支 aeneas(冒号前面的）到远程分支 aeneas（冒号后面的）</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_3-9-子分支同步主分支"><a href="#_3-9-子分支同步主分支" class="header-anchor">#</a> 3.9 子分支同步主分支</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 在子分支上</span>
+git merge master
+git status
+git add <span class="token punctuation">.</span> 
+git commit <span class="token operator">-</span>m
+git push
+
+<span class="token comment">// 同步远程已删除的分支</span>
+git remote prune origin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="四、版本标签"><a href="#四、版本标签" class="header-anchor">#</a> 四、版本标签</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 查看提交记录</span>
+git log <span class="token operator">--</span>pretty<span class="token operator">=</span>oneline <span class="token operator">--</span>abbrev<span class="token operator">-</span>commit
+
+<span class="token comment">// 创建标签</span>
+git tag v1<span class="token punctuation">.</span><span class="token number">0</span>
+
+<span class="token comment">// 覆盖原有标签（相当于将 v1.0 重新绑定到当前 commit 上）</span>
+git tag <span class="token operator">-</span>f v1<span class="token punctuation">.</span><span class="token number">0</span>
+
+<span class="token comment">// 在指定 commit xxx 上创建标签</span>
+git tag v0<span class="token punctuation">.</span><span class="token number">9</span> xxxx
+
+<span class="token comment">// 创建标签并添加说明</span>
+git tag <span class="token operator">-</span>a v0<span class="token punctuation">.</span><span class="token number">1</span> <span class="token operator">-</span>m <span class="token string">&quot;version 0.1 released&quot;</span> xxx
+
+<span class="token comment">// 显示标签</span>
+<span class="token comment">// 显示标签详情</span>
+git show v1<span class="token punctuation">.</span><span class="token number">0</span> <span class="token number">3.</span>将本地标签推送到远程仓库
+git push origin v1<span class="token punctuation">.</span><span class="token number">0</span>
+
+<span class="token comment">// 将本地所有标签推送到远程仓库</span>
+git push <span class="token operator">--</span>tags
+git push origin <span class="token operator">--</span>tags
+
+<span class="token comment">// 清除忽略的缓存并使远程生效</span>
+git rm <span class="token operator">-</span>r <span class="token operator">--</span>cached <span class="token punctuation">.</span>
+
+git add <span class="token punctuation">.</span>
+git commit <span class="token operator">-</span>m <span class="token string">'remove ignore file'</span>
+git push
+
+<span class="token comment">// 重设</span>
+git reset <span class="token operator">--</span>soft
+git reset <span class="token operator">--</span>mixed
+git reset <span class="token operator">--</span>hard
+
+<span class="token comment">// git 去除大文件的历史记录</span>
+git filter<span class="token operator">-</span>branch <span class="token operator">--</span>force <span class="token operator">--</span>index<span class="token operator">-</span>filter <span class="token string">'git rm --cached --ignore-unmatch --ignore-unmatch Miniconda3-latest-Linux-x86_63.sh'</span> <span class="token operator">--</span>prune<span class="token operator">-</span>empty <span class="token operator">--</span>tag<span class="token operator">-</span>name<span class="token operator">-</span>filter cat <span class="token operator">--</span> <span class="token operator">--</span>all
+
+<span class="token comment">// 更新本地工作组（和远程分支一样）</span>
+git fetch <span class="token operator">-</span>p
+
+<span class="token comment">// 默认 git 配置了忽略大小写敏感</span>
+git config core<span class="token punctuation">.</span>ignorecase <span class="token boolean">true</span>
+
+<span class="token comment">// 下面设置大小写敏感为敏感</span>
+git config core<span class="token punctuation">.</span>ignorecase <span class="token boolean">false</span>
+
+<span class="token comment">// 这时，再通过 git status 就能找到你修改文件名大小写后的变更了</span>
+
+<span class="token comment">// 更新所有子项目</span>
+git submodule update <span class="token operator">--</span>init <span class="token operator">--</span>recursive
+
+git fetch origin
+git rebase origin<span class="token operator">/</span>master
+
+<span class="token comment">// fork 项目与原项目同步</span>
+
+git clone 新项目地址
+git remote add author 原项目地址
+git remote <span class="token operator">-</span>v 查看地址检查
+
+<span class="token comment">// 拉取原项目更新</span>
+git fetch author
+
+<span class="token comment">// 切换到新项目主分支</span>
+git checkout master
+
+<span class="token comment">// 将原项目更新合并到新项目</span>
+git merge author<span class="token operator">/</span>master
+
+<span class="token comment">// 推送更新到远程仓库</span>
+git push origin master
+
+<span class="token comment">// 撤销</span>
+<span class="token comment">// 工作区：写代码的区域</span>
+<span class="token comment">// 暂存区： git add 文件以后的区域</span>
+<span class="token comment">// 仓库区： git commit 文件以后的区域</span>
+
+<span class="token comment">// 撤销内容的修改</span>
+git restore <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+
+<span class="token comment">// 撤销提交：即移动文件从暂存区回到工作区</span>
+git restore <span class="token operator">--</span>staged <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+
+使用 git add <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span> 把文件重新放到暂存区，且保留文件的修改；
+使用 git restore <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span> 文件仍在本地代码库且会撤销文件的修改；
+对于 git restore <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>命令，会撤销文件的修改，使文件恢复到暂存区或本地代码库（取决于文件在修改前的状态）；
+对于 git restore <span class="token operator">--</span>staged <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>命令，把文件从暂存区撤回到工作区，保留文件最后一次修改的内容；
+
+<span class="token comment">// 清空所有 commit</span>
+git checkout <span class="token operator">--</span>orphan latest_branch
+git add <span class="token operator">-</span><span class="token constant">A</span>
+git commit <span class="token operator">-</span>am <span class="token string">&quot;commit message&quot;</span>
+git branch <span class="token operator">-</span><span class="token constant">D</span> master
+git branch <span class="token operator">-</span>m master
+git push <span class="token operator">-</span>f origin master
+
+<span class="token comment">// 删除敏感数据</span>
+git filter<span class="token operator">-</span>branch <span class="token operator">--</span>index<span class="token operator">-</span>filter <span class="token string">'git rm -r --cached --ignore-unmatch viabtc 交易所 Mac 启动.md'</span> <span class="token constant">HEAD</span>
+
+git filter<span class="token operator">-</span>branch <span class="token operator">--</span>index<span class="token operator">-</span>filter <span class="token string">'git rm -r --cached --ignore-unmatch path/to/your/file'</span> <span class="token constant">HEAD</span>
+
+git push origin master <span class="token operator">--</span>force
+rm <span class="token operator">-</span>rf <span class="token punctuation">.</span>git<span class="token operator">/</span>refs<span class="token operator">/</span>original<span class="token operator">/</span>
+git reflog expire <span class="token operator">--</span>expire<span class="token operator">=</span>now <span class="token operator">--</span>all
+git gc <span class="token operator">--</span>prune<span class="token operator">=</span>now
+git gc <span class="token operator">--</span>aggressive <span class="token operator">--</span>prune<span class="token operator">=</span>now
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br></div></div><h2 id="五、代理"><a href="#五、代理" class="header-anchor">#</a> 五、代理</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 手动设置 git 代理</span>
+git config <span class="token operator">--</span>global http<span class="token punctuation">.</span>proxy <span class="token string">'socks5://127.0.0.1:1080'</span>
+git config <span class="token operator">--</span>global https<span class="token punctuation">.</span>proxy <span class="token string">'socks5://127.0.0.1:1080'</span>
+
+<span class="token comment">// 取消 git 代理</span>
+git config <span class="token operator">--</span>global <span class="token operator">--</span>unset http<span class="token punctuation">.</span>proxy
+git config <span class="token operator">--</span>global <span class="token operator">--</span>unset https<span class="token punctuation">.</span>proxy
+
+<span class="token comment">// 取消所有修改</span>
+git checkout <span class="token punctuation">.</span>
+
+<span class="token comment">// 移除.DS_Store 文件</span>
+git rm <span class="token operator">--</span>cached <span class="token punctuation">.</span>DS_Store
+find <span class="token punctuation">.</span> <span class="token operator">-</span>name <span class="token punctuation">.</span>DS_Store <span class="token operator">-</span>print0 <span class="token operator">|</span> xargs <span class="token operator">-</span><span class="token number">0</span> git rm <span class="token operator">--</span>ignore<span class="token operator">-</span>unmatch
+
+<span class="token comment">// 强制将 test 分支与主分支保持一致</span>
+git push origin master<span class="token operator">:</span>test <span class="token operator">-</span>f
+
+<span class="token comment">// 远程仓库强制覆盖本地主分支</span>
+git fetch <span class="token operator">--</span>all <span class="token operator">&amp;&amp;</span> git reset <span class="token operator">--</span>hard origin<span class="token operator">/</span>master <span class="token operator">&amp;&amp;</span> git pull
+
+<span class="token comment">// 删除远程分支</span>
+git push origin <span class="token operator">--</span><span class="token keyword">delete</span> 远程分支名
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div></div></div>  <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87" title="标签">#开发必备</a><a href="/tags/?tag=Git" title="标签">#Git</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/11/29, 15:43:28</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><!----> <a href="/pages/857e93/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">7层网络模型</div></a></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pages/857e93/">7层网络模型</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/3da9ac/"><div>开发必备</div></a> <span>11-29</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/ece736/"><div>工具</div></a> <span>11-29</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/c808f3/"><div>后端</div></a> <span>11-29</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:chstz_365@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/chst365" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2022
+    <span>chst365 | 豫ICP备17031889号-1</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div><!----></div></div>
+    <script src="/assets/js/app.f338cee7.js" defer></script><script src="/assets/js/2.6c5c5aa7.js" defer></script><script src="/assets/js/95.885efd1a.js" defer></script><script src="/assets/js/3.5cedc995.js" defer></script>
+  </body>
+</html>
