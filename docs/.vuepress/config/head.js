@@ -17,7 +17,7 @@ module.exports = [
     ['link', { rel: 'mask-icon', href: '/img/360x360.png', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/img/192x192.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
+    // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //     'script',
