@@ -1,14 +1,17 @@
 {
   "name": "studyBlog",
-  "version": "1.1.0",
+  "version": "1.1.1-0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": " vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
+    "deploy": "bash ./scripts/deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "./scripts/release.sh",
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && npm run changeissueurl",
+    "changeissueurl": "replace 'https://github.com/chst365/studyBlog/issues' 'https://redmine.example.com/' CHANGELOG.md"
   },
   "author": "",
   "license": "ISC",
