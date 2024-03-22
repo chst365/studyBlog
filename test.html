@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="part" style="background: red;">afsadfsdfsdklfjslkdjfksjdfsdlkfjlskajdkfsd fjasdkljfkasjdkfjasdkjfkas
+            dfjsadkjfkasdjfkjsdjfads</div>
+        <div class="part" style="background: greenyellow;"></div>
+        <div class="part" style="background: blue;"></div>
+    </div>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .part {
+            /* 元素无内容时，可以用flex-grow:1; 有内容需加上flex-basis:0; */
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+    </style>
+    <script>
+        var obj = {
+            a: 1,
+            b: 2,
+        }
+        Object.prototype.c = function () {
+            console.log('c');
+        }
+        for (var key in obj) {
+            console.log(key)
+        }
+    </script>
+</body>
+
+</html>
