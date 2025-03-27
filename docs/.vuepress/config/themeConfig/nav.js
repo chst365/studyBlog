@@ -41,6 +41,27 @@ module.exports = [
             { text: '编码解码', link: '/pages/3b717c/' },
         ]
     },
+    {
+        text: '面试官',
+        // link: '/pages/3f2100/',
+        items: [
+            { text: 'NodeJS系列', link: '/pages/fad688/' },
+            { text: 'Linux系列', link: '/pages/e6ba8c/' },
+            { text: 'JavaScript系列', link: '/pages/e82029/' },
+            { text: 'HTTP系列', link: '/pages/40b80c/' },
+            { text: 'GIT系列', link: '/pages/d342ad/' },
+            { text: 'ES6系列', link: '/pages/6450fd/' },
+            { text: '设计模式系列', link: '/pages/1e8180/' },
+            { text: 'CSS系列', link: '/pages/27a5c3/' },
+            { text: '小程序系列', link: '/pages/d1a4f9/' },
+            { text: '数据结构与算法系列', link: '/pages/c3a1ba/' },
+            { text: 'React系列', link: '/pages/7be89d/' },
+            { text: 'Vue3系列', link: '/pages/3aee03/' },
+            { text: 'Vue系列', link: '/pages/d0513f/' },
+            { text: 'TypeScript系列', link: '/pages/9fc1d5/' },
+            { text: 'Webpack系列', link: '/pages/6d6201/' },
+        ]
+    },
     // {
     //     text: '收藏',
     //     link: '/pages/beb6c0bd8a66cea6/',

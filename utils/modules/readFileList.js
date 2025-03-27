@@ -4,7 +4,6 @@
 const fs = require('fs'); // 文件模块
 const path = require('path'); // 路径模块
 const docsRoot = path.join(__dirname, '..', '..', 'docs'); // docs文件路径
-const log = console.log
 
 function readFileList(dir = docsRoot, filesList = []) {
   const files = fs.readdirSync(dir);
